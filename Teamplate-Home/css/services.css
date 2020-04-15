@@ -21,6 +21,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.time-open-all {
+    padding-left: 20px;
+}
+
 .time-open .top-title {
     color: #000000;
 }
@@ -29,12 +33,20 @@ body {
     color: #999999;
 }
 
+.phone-all {
+    margin-left: 20px;
+}
+
 .phone .top-title {
     color: #498acf;
 }
 
 .phone .top-about {
     color: #999999;
+}
+
+.address-all {
+    margin-left: 15px;
 }
 
 .address .top-title {
@@ -109,48 +121,100 @@ body {
 }
 
 /*--body--*/
-.quote{
+.featured{
+    margin: 80px 0 100px 0;
+}
+.featured-number {
+    height: 70px;
+    width: 70px;
+    color: #498acf;
+    margin-left: 40%;
+    text-align: center;
+    border: 1px solid #498acf;
+    border-radius: 5px;
+    padding: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.featured-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.featured-about {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.quote {
     background-color: #498acf;
     padding: 35px 0;
 }
-.quote-text{
+
+.quote-text {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #fff;
     text-align: center;
 }
-.content-area{  
+
+.content-area {
     margin: 100px 0;
 }
-.Content-text{
+
+.Content-text {
     margin-left: 60px;
 }
-.Content-img{
-    background-image: url(../img/se1_01.jpg) ;
+
+.Content-img {
+    background-image: url(../img/se1_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 440px;
     width: 570px;
 }
-.content-title{
+
+.content-title {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     color: black;
 }
 
-.content-intro{
+.content-intro {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     color: #666666;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.content-about{
+
+.number {
+    font-size: 14px;
+    color: #498acf;
+}
+
+.content-list {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    color: #666666; 
-    margin-top: 25px;  
+    color: #999999;
 }
+
+.content-about {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 25px;
+}
+
 .call-to-action {
     background-image: url(../img/call.png);
     height: 120px;
@@ -179,6 +243,7 @@ body {
     background-color: #fff;
     padding: 20px;
 }
+
 /*--footer--*/
 .footer-top {
     background-color: #222222;
@@ -216,6 +281,10 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     color: #fff;
+}
+
+.contact-us {
+    padding-left: 35px;
 }
 
 .fa {

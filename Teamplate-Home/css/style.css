@@ -21,6 +21,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.time-open-all {
+    padding-left: 20px;
+}
+
 .time-open .top-title {
     color: #000000;
 }
@@ -29,12 +33,20 @@ body {
     color: #999999;
 }
 
+.phone-all {
+    margin-left: 20px;
+}
+
 .phone .top-title {
     color: #498acf;
 }
 
 .phone .top-about {
     color: #999999;
+}
+
+.address-all {
+    margin-left: 15px;
 }
 
 .address .top-title {
@@ -198,7 +210,8 @@ body {
 }
 
 .img1 {
-    padding-right: 40px;
+    /* padding-right: 40px; */
+    float: left;
 }
 
 .img2 {
@@ -215,10 +228,13 @@ body {
     padding-left: 40px;
     padding-right: 40px;
 }
+
 .img5 {
-    padding-left: 40px;
-    padding-right: 40px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    float: right;
 }
+
 .line {
     border-right: 1px solid #eaeaea;
     height: 100px;
@@ -279,12 +295,9 @@ b {
 
 .panel-about {
     margin: 30px 0;
-    padding-left: 30px;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     color: #989898;
-    border-left: 1px solid #498acf;
-    border-left-width: 5px;
 }
 
 .intro {
@@ -357,8 +370,14 @@ b {
 
 .preview-action {
     border: 1px solid #eeeeee;
-    padding: 20px;
+    padding: 20px 35px 25px 25px;
+    /* width: 570px;
+    height: 220px; */
 }
+
+/* .preview-action-1 {
+    margin-right: 30px;
+} */
 
 .preview-title {
     font-family: 'Poppins', sans-serif;
@@ -387,11 +406,23 @@ b {
 }
 
 .map {
-    background-image: url(../img/map.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
     height: 700px;
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .footer-top {
@@ -419,17 +450,8 @@ b {
     margin-top: 23px;
 }
 
-.bottom {
-    background-color: #181818;
-    height: 80px;
-    text-align: center;
-    padding-top: 35px;
-}
-
-.bottom-text {
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
-    color: #fff;
+.contact-us{
+    padding-left: 35px;
 }
 
 .fa {
@@ -460,4 +482,16 @@ b {
 .fa-pinterest {
     background: #cb2027;
     color: white;
+}
+.bottom {
+    background-color: #181818;
+    height: 80px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.bottom-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: #fff;
 }
