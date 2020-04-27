@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>arrowFunction</title>
 </head>
 
 <body>
@@ -37,6 +37,44 @@
 
         var four = () => console.log("xxxyyyzzz");
         four();
+
+        var five = ["mang 1", "mang 2", "mang 3"];
+        five.map(function(val, key) {
+            console.log(val.toUpperCase());
+            five[key] = val.toUpperCase();
+        });
+        console.log(five);
+
+        var six = ["mang 4", "mang 5", "mang 6"];
+        six.map((val, key) => {
+            console.log(val.toUpperCase());
+            six[key] = val.toUpperCase();
+        });
+        console.log(six);
+
+        // setTimeout(() =>
+        //     console.log("3 giây trôi qua mới xuất hiện"), 3000
+        // );
+
+        var x = () => {}
+        console.log(typeof x);
+
+        var blog1 = {
+            do: "freetuts.net",
+            showWebsite: function(callbackFunction) {
+                callbackFunction();
+            },
+            render: function() {
+                this.showWebsite(function() {
+                    console.log(this.do); // this chính là blog
+                }.bind(this)); // phải sử dụng hàm bind thì đối tượng this mới chính là blog
+                this.showWebsite((() => {
+                    console.log(this.do); // this chính là blog
+                }));
+            }
+        };
+
+        blog1.render();
     </script>
 </body>
 
