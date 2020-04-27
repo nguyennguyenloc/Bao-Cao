@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Hello(name, mess) {
+            console.log("name: " + name + ", tin nhắn :" + mess);
+        }
+        Hello('Lộc', 'Cố lên');
+
+        var hi = (name, messa) => {
+            console.log("name: " + name + ", tin: " + messa);
+        }
+        hi('Lộc', 'Hola');
+
+        var hi = (name, messa) => console.log("name: " + name + ", tin: " + messa);
+        hi('Lộc', 'Xin chào');
+
+        var one = mes => {
+            console.log("Tin nhắn: " + mes);
+        }
+        one('Tuyền trực tiếp');
+
+        var two = twomess => console.log("Trực tiếp không cần ngoặc " + twomess);
+        two('Ok');
+
+        var three = () => {
+            console.log("Hi hi, ha ha");
+        }
+        three();
+
+        var four = () => console.log("xxxyyyzzz");
+        four();
+    </script>
+</body>
+
+</html>
