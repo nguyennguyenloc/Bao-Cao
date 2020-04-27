@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructured</title>
+</head>
+
+<body>
+    <script>
+        // let date = [10, 03, 2016]
+        // let [d, m, y] = date;
+        // console.log("Day: " + d);
+        // console.log("Month: " + m);
+        // console.log("Year: " + y);
+
+        // Chuyển ba giá trị vào ba biến y
+        // let [, , y] = date;
+
+        // // In kết quả
+        // console.log("Year: " + y);
+
+        // let b = {
+        //     day: 10,
+        //     month: 06,
+        //     year: 2018
+        // }
+
+        // let {
+        //     year: k
+        // } = date;
+
+        // console.log("Year: " + k);
+
+        var person = {
+            name: "Lộc",
+            email: "nnloc123@gmail.com"
+        };
+
+        var {
+            name: loc_name,
+            email: loc_email
+        } = person;
+
+        console.log(loc_name);
+        console.log(loc_email);
+    </script>
+</body>
+
+</html>
