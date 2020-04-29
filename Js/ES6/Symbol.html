@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol</title>
+</head>
+
+<body>
+    <script>
+        let Symbol1 = Symbol();
+        let Symbol2 = Symbol('symbol2');
+        console.log(Symbol1 === Symbol2);
+        console.log(typeof Symbol1);
+
+        const my_key = Symbol();
+        let obj = {
+            [my_key]: 123
+        };
+        console.log(obj[my_key]);
+
+        let map = new Map();
+        map.set(my_key, 'nguyenloc.com');
+        console.log([...map]);
+
+        var sym1 = Symbol('locxinchao.com');
+        var sym2 = Symbol('locxinchao.com');
+
+        var sym1_new = String(sym1);
+        var sym2_new = String(sym2);
+
+        document.write(sym1 === sym2); //false
+        document.write(sym1_new === sym2_new); //true
+
+        var key = Symbol('cố lên');
+
+        var object = {};
+        object[key] = 'Cố lên';
+
+        console.log(object[key]);
+
+        var key = Symbol('cố lên');
+        console.log(object[key]);
+    </script>
+</body>
+
+</html>

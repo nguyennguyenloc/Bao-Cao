@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+</head>
+
+<body>
+    <script>
+        var domains = [{
+            domain: 'aaa.aaa',
+            author: 'bbb.bbb'
+        }, {
+            domain: "ccc.ccc",
+            author: "ddd.ddd"
+        }];
+
+        domains.map(function(domain, key) {
+            var tmpl = `
+             <div> 
+                <h1> ${domain.domain} </h1>  
+                <h2> ${domain.author} </h2> 
+            </div> 
+            `;
+            console.log(tmpl);
+        });
+    </script>
+</body>
+
+</html>

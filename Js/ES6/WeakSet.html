@@ -8,7 +8,21 @@
 </head>
 
 <body>
-    <script></script>
+    <script>
+        var weak = new WeakSet();
+
+        var key1 = {
+            name: "thehalfheart"
+        };
+
+        var key2 = {
+            name = "huhiuhi"
+        }
+
+        weak.add(key1);
+        weak.add(key2);
+        console.log(weak.has(key1));
+    </script>
 </body>
 
 </html>
