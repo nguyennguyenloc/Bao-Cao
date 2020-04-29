@@ -20,13 +20,31 @@
         // console.log(map.has('Email'));
         // console.log(map.has('nguyenloc.com'));
 
-        let map = new Map();
-        const Key1 = {};
-        map.set(Key1, 'Nguyễn Nguyên Lộc - cố lên');
-        console.log(map.get(Key1));
+        // let map = new Map();
+        // const Key1 = {};
+        // map.set(Key1, 'Nguyễn Nguyên Lộc - cố lên');
+        // console.log(map.get(Key1));
 
-        map.set(NaN, 'Nguyenloc.com');
-        console.log(map.get(NaN));
+        // map.set(NaN, 'Nguyenloc.com');
+        // console.log(map.get(NaN));
+
+        let map = new Map([
+            ["Name", "Nguyễn Nguyên Lộc"],
+            ["Email", "nnloc123@gmail.com"],
+            ["Website", "nguyenloc.com"]
+        ]);
+
+        // for (var entry of map.entries()) {
+        //     console.log(entry[0] + ' - ' + entry[1]);
+        // }
+
+        // for (var [key, value] of map) {
+        //     console.log(key + ' - ' + value);
+        // }
+
+        map.forEach((value, key) => {
+            console.log(key + ' + ' + value);
+        });
     </script>
 </body>
 

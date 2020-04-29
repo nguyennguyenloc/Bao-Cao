@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collectionMap1</title>
+</head>
+
+<body>
+    <script>
+        let map = new Map().set(1, 'a').set(2, 'b').set(3, 'c').set(4, 'd').set(5, 'e');
+        let map1 = new Map([...map].filter(([key, value]) => key % 2 == 0));
+        console.log(map1);
+        let map2 = new Map([...map].map(([key, value]) => [key, key + '-' + value]));
+        console.log(map2);
+    </script>
+</body>
+
+</html>

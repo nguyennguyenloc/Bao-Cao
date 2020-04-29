@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeakMap</title>
+</head>
+
+<body>
+    <script>
+        var weak = new WeakMap();
+
+        var key1 = {};
+        var key2 = {};
+        weak.set(key1, "gia tri 01");
+        weak.set(key2, "gia tri 02");
+        console.log(weak.get(key1));
+        console.log(weak.get(key2));
+    </script>
+</body>
+
+</html>
