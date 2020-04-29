@@ -9,16 +9,24 @@
 
 <body>
     <script>
-        let map = new Map([
-            ["Name", "Nguyễn Nguyên Lộc"],
-            ["Email", "nnloc123@gmail.com"],
-            ["Website", "nguyenloc.com"]
-        ]);
-        console.log(map);
+        // let map = new Map([
+        //     ["Name", "Nguyễn Nguyên Lộc"],
+        //     ["Email", "nnloc123@gmail.com"],
+        //     ["Website", "nguyenloc.com"]
+        // ]);
+        // console.log(map);
 
-        console.log(map.has('domain'));
-        console.log(map.has('Email'));
-        console.log(map.has('nguyenloc.com'));
+        // console.log(map.has('domain'));
+        // console.log(map.has('Email'));
+        // console.log(map.has('nguyenloc.com'));
+
+        let map = new Map();
+        const Key1 = {};
+        map.set(Key1, 'Nguyễn Nguyên Lộc - cố lên');
+        console.log(map.get(Key1));
+
+        map.set(NaN, 'Nguyenloc.com');
+        console.log(map.get(NaN));
     </script>
 </body>
 
