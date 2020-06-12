@@ -52,9 +52,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label2.Location = new System.Drawing.Point(120, 182);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(343, 23);
+            this.label2.Size = new System.Drawing.Size(348, 23);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Gmail: hotronguoidung2gmail.com";
+            this.label2.Text = "Gmail: hotronguoidung@gmail.com";
             // 
             // label3
             // 
